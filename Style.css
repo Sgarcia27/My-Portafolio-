@@ -1,27 +1,57 @@
 body {
+	margin: 0;
+	background: var(--color-background);
 	color: var(--color-text);
 }
 
 main {
 	display: grid;
 	gap: 2rem;
-	width: min(90%, 70rem);
+	width: min(calc(100% - 2rem), 70rem);
 	margin: 2rem auto;
 }
 
 section {
-	padding: 1.5rem;
+	min-width: 0;
+	padding: clamp(1rem, 3vw, 1.5rem);
 	border: 1px solid var(--color-border);
 	background: var(--color-surface);
 }
 
-.skills-grid {
+.personal-intro {
 	display: flex;
+	align-items: center;
+	gap: 2rem;
+}
+
+.personal-intro figure {
+	flex: 0 0 280px;
+	margin: 0;
+}
+
+.personal-intro figure img {
+	display: block;
+	width: 280px;
+	height: 280px;
+	border: 6px solid var(--color-surface);
+	border-radius: 1rem;
+	box-shadow: 0 0.75rem 1.5rem rgb(43 41 38 / 18%);
+	object-fit: cover;
+}
+
+.personal-intro-text {
+	flex: 1;
+}
+
+.personal-intro-text h3 {
+	margin-top: 0;
+}
+
+.skills-grid {
+	display: grid;
 	align-items: flex-start;
-	justify-content: center;
-	flex-wrap: nowrap;
+	grid-template-columns: repeat(6, minmax(0, 1fr));
 	gap: 1rem;
-	overflow-x: auto;
 }
 
 .skill-group {
@@ -88,8 +118,7 @@ section {
 .language-item-wrap {
 	display: grid;
 	align-content: start;
-	flex: 1 0 6rem;
-	min-width: 6rem;
+	min-width: 0;
 }
 
 .language-item {
@@ -172,7 +201,7 @@ header {
 	align-items: center;
 	justify-content: space-between;
 	gap: 2rem;
-	padding: 1rem 2rem;
+	padding: 1rem clamp(1rem, 4vw, 2rem);
 	border-bottom: 1px solid var(--color-border);
 	background: var(--color-surface);
 }
@@ -215,12 +244,15 @@ nav a:focus-visible {
 	outline-offset: 2px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
+	.skills-grid {
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}
+
 	header {
 	align-items: flex-start;
 	flex-direction: column;
 	gap: 1rem;
-	padding: 1rem;
 	}
 
 	nav,
@@ -231,13 +263,53 @@ nav a:focus-visible {
 	nav ul {
 	justify-content: flex-start;
 	}
+}
 
-	.skills-grid {
-	justify-content: flex-start;
+@media (max-width: 700px) {
+	main {
+		gap: 1rem;
+		width: min(calc(100% - 1rem), 70rem);
+		margin: 1rem auto;
+	}
+
+	.personal-intro {
+		align-items: flex-start;
+		flex-direction: column;
+		gap: 1rem;
+	}
+
+	.personal-intro figure {
+		flex-basis: auto;
+		width: 100%;
+	}
+
+	.personal-intro figure img {
+		width: min(100%, 280px);
+		height: auto;
+		aspect-ratio: 1;
 	}
 
 	.personal-skills-list {
 	grid-template-columns: 1fr;
+	}
+
+	.skills-grid {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 0.75rem;
+	}
+
+	nav ul {
+		gap: 0.25rem;
+	}
+
+	nav a {
+		padding: 0.5rem;
+	}
+}
+
+@media (max-width: 420px) {
+	.skills-grid {
+		grid-template-columns: 1fr;
 	}
 }
 
@@ -251,6 +323,7 @@ li,
 figcaption,
 label {
 	color: var(--color-text-muted);
+	overflow-wrap: anywhere;
 }
 
 header p {
