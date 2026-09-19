@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio de mi vida</title>
+    <meta name="description" content="Portafolio profesional de Steven Garcia, estudiante de Ingeniería de Software y desarrollador web.">
+    <title>Steven Garcia | Ingeniería de Software</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <link rel="stylesheet" href="root.css">
     <link rel="stylesheet" href="Style.css">
@@ -14,16 +18,9 @@
             <h1>Mi Portafolio</h1>
             <p>Desarrollador web</p>
         </div>
-        <nav aria-label="Navegación principal">
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#sobre">Sobre mí</a></li>
-                <li><a href="#skills">Habilidades</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#design-system">Sistema de diseño</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
+        <div class="header-actions">
+            <button class="theme-toggle" type="button" aria-pressed="false">Tema claro</button>
+        </div>
     </header>
 
     <main>
@@ -38,7 +35,7 @@
                 <div class="personal-intro-text">
                     <h3>Steven Garcia</h3>
                     <p><strong>Perfil profesional:</strong> Desarrollador web.</p>
-                    <p>Estudiante de 8 semestre de la carrera de Ingieneria en software con un curso culminado y certificado de Amazon web con metas de cumploter mas curso para mejorar</p>
+                    <p>Estudiante de octavo semestre de Ingeniería de Software, con formación complementaria y un certificado de Amazon Web Services. Mi objetivo es seguir fortaleciendo mis conocimientos mediante nuevos proyectos y cursos.</p>
 
                     <h3>Formación e intereses académicos</h3>
                     <p>Actualmente fortalezco mi formación en desarrollo web, con especial interés en accesibilidad, diseño adaptable y creación de soluciones digitales útiles.</p>
@@ -149,47 +146,51 @@
         <section id="proyectos" aria-labelledby="proyectos-titulo">
             <h2 id="proyectos-titulo">Proyectos destacados</h2>
 
+            <div class="project-filters" aria-label="Filtrar proyectos por tecnología">
+                <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">Todos</button>
+                <button class="filter-button" type="button" data-filter="frontend" aria-pressed="false">Frontend</button>
+                <button class="filter-button" type="button" data-filter="backend" aria-pressed="false">Backend</button>
+                <button class="filter-button" type="button" data-filter="tools" aria-pressed="false">Herramientas</button>
+            </div>
+
             <div class="projects-grid">
-                <article class="project-card">
+                <article class="project-card" data-category="frontend">
                     <figure>
-                        <img src="" alt="">
+                        <div class="project-placeholder" aria-hidden="true">01</div>
                     </figure>
-                    <h3></h3>
-                    <p></p>
-                    <p><strong></strong></p>
+                    <h3>Portafolio personal</h3>
+                    <p>Diseño y desarrollo de una presentación web profesional, accesible y adaptable.</p>
+                    <p><strong>Tecnologías:</strong> HTML5, CSS3 y JavaScript.</p>
                     <ul>
-                        <li></li>
+                        <li>Interfaz responsive y estructura semántica.</li>
                     </ul>
-                    <a href=""></a>
-                    <a href=""></a>
+                    <a href="#contacto">Consultar proyecto</a>
                 </article>
 
-                <article class="project-card">
+                <article class="project-card" data-category="backend">
                     <figure>
-                        <img src="" alt="">
+                        <div class="project-placeholder" aria-hidden="true">02</div>
                     </figure>
-                    <h3></h3>
-                    <p></p>
-                    <p><strong></strong></p>
+                    <h3>Gestor de tareas</h3>
+                    <p>Propuesta de aplicación para organizar actividades de forma simple y ordenada.</p>
+                    <p><strong>Tecnologías:</strong> Python y Django.</p>
                     <ul>
-                        <li></li>
+                        <li>Enfoque en lógica de negocio y usabilidad.</li>
                     </ul>
-                    <a href=""></a>
-                    <a href=""></a>
+                    <a href="#contacto">Consultar proyecto</a>
                 </article>
 
-                <article class="project-card">
+                <article class="project-card" data-category="tools">
                     <figure>
-                        <img src="" alt="">
+                        <div class="project-placeholder" aria-hidden="true">03</div>
                     </figure>
-                    <h3></h3>
-                    <p></p>
-                    <p><strong></strong></p>
+                    <h3>Flujo de desarrollo</h3>
+                    <p>Práctica de organización de código, control de versiones y documentación técnica.</p>
+                    <p><strong>Herramientas:</strong> Git y GitHub.</p>
                     <ul>
-                        <li></li>
+                        <li>Seguimiento de cambios y colaboración.</li>
                     </ul>
-                    <a href=""></a>
-                    <a href=""></a>
+                    <a href="#contacto">Consultar proyecto</a>
                 </article>
             </div>
         </section>
@@ -203,6 +204,10 @@
             </address>
         </section>
     </main>
+
+    <button class="back-to-top" type="button" aria-label="Volver al inicio">↑</button>
+
+    <script src="script.js" defer></script>
 
 </body>
 </html>
