@@ -9,17 +9,31 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-    <link rel="stylesheet" href="root.css">
     <link rel="stylesheet" href="Style.css">
 </head>
 <body>
-    <header>
-        <div>
-            <h1>Mi Portafolio</h1>
-            <p>Desarrollador web</p>
+    <header class="facebook-header">
+        <div class="brand-group">
+            <div class="brand-mark" aria-label="Logo del portafolio">
+                <img src="https://clipground.com/images/fairy-tail-anime-logo-1.jpg" alt="Logo de Fairy Tail" />
+            </div>
+            <div class="brand-copy">
+                <h1>Mi Portafolio</h1>
+            </div>
         </div>
-        <div class="header-actions">
-            <button class="theme-toggle" type="button" aria-pressed="false">Tema claro</button>
+
+        <nav class="header-nav" aria-label="Navegación principal">
+            <ul>
+                <li><a href="#sobre">Sobre mí</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-actions" aria-label="Selector de tema">
+            <button class="theme-toggle" type="button" data-theme="light" aria-pressed="false">Claro</button>
+            <button class="theme-toggle is-active" type="button" data-theme="dark" aria-pressed="true">Oscuro</button>
         </div>
     </header>
 
@@ -33,18 +47,26 @@
                 </figure>
 
                 <div class="personal-intro-text">
+                    <p class="eyebrow">Ingeniería de software · desarrollo web</p>
                     <h3>Steven Garcia</h3>
-                    <p><strong>Perfil profesional:</strong> Desarrollador web.</p>
-                    <p>Estudiante de octavo semestre de Ingeniería de Software, con formación complementaria y un certificado de Amazon Web Services. Mi objetivo es seguir fortaleciendo mis conocimientos mediante nuevos proyectos y cursos.</p>
+                    <p class="lead"><strong>Perfil profesional:</strong> desarrollador web con enfoque en interfaces accesibles, experiencias digitales funcionales y soluciones bien estructuradas.</p>
+                    <p>Estudiante de octavo semestre de Ingeniería de Software, con formación complementaria y un certificado de Amazon Web Services. Mi objetivo es seguir fortaleciendo mis conocimientos mediante nuevos proyectos, aprendizaje continuo y trabajo colaborativo.</p>
+
+                    <div class="profile-meta" aria-label="Datos relevantes">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>Python</span>
+                    </div>
 
                     <h3>Formación e intereses académicos</h3>
-                    <p>Actualmente fortalezco mi formación en desarrollo web, con especial interés en accesibilidad, diseño adaptable y creación de soluciones digitales útiles.</p>
+                    <p>Actualmente fortalezco mi formación en desarrollo web, con especial interés en accesibilidad, diseño adaptable, arquitectura de información y creación de soluciones digitales útiles.</p>
 
                     <h3>Tecnologías</h3>
                     <ul>
                         <li>HTML5, CSS3, JavaScript y Python.</li>
                         <li>Django.</li>
-                        <li>Git.</li>
+                        <li>Git y GitHub.</li>
                     </ul>
                 </div>
             </div>
@@ -145,13 +167,6 @@
 
         <section id="proyectos" aria-labelledby="proyectos-titulo">
             <h2 id="proyectos-titulo">Proyectos destacados</h2>
-
-            <div class="project-filters" aria-label="Filtrar proyectos por tecnología">
-                <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">Todos</button>
-                <button class="filter-button" type="button" data-filter="frontend" aria-pressed="false">Frontend</button>
-                <button class="filter-button" type="button" data-filter="backend" aria-pressed="false">Backend</button>
-                <button class="filter-button" type="button" data-filter="tools" aria-pressed="false">Herramientas</button>
-            </div>
 
             <div class="projects-grid">
                 <article class="project-card" data-category="frontend">

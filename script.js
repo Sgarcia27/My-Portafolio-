@@ -1,40 +1,25 @@
 const body = document.body;
-const themeToggle = document.querySelector(".theme-toggle");
-const filterButtons = document.querySelectorAll(".filter-button");
+const themeButtons = document.querySelectorAll(".theme-toggle");
 const projectCards = document.querySelectorAll(".project-card");
 const backToTop = document.querySelector(".back-to-top");
 const themeStorageKey = "portfolio-theme";
 
 function setTheme(theme) {
     document.documentElement.dataset.theme = theme;
-    const isLight = theme === "light";
-    themeToggle.textContent = isLight ? "Tema oscuro" : "Tema claro";
-    themeToggle.setAttribute("aria-pressed", String(isLight));
-    themeToggle.setAttribute("aria-label", isLight ? "Cambiar al tema oscuro" : "Cambiar al tema claro");
+    themeButtons.forEach((button) => {
+        const isActive = button.dataset.theme === theme;
+        button.classList.toggle("is-active", isActive);
+        button.setAttribute("aria-pressed", String(isActive));
+    });
+    localStorage.setItem(themeStorageKey, theme);
 }
 
-const savedTheme = localStorage.getItem(themeStorageKey);
+const savedTheme = localStorage.getItem(themeStorageKey) || "dark";
 setTheme(savedTheme === "light" ? "light" : "dark");
 
-themeToggle.addEventListener("click", () => {
-    const nextTheme = document.documentElement.dataset.theme === "light" ? "dark" : "light";
-    setTheme(nextTheme);
-    localStorage.setItem(themeStorageKey, nextTheme);
-});
-
-filterButtons.forEach((button) => {
+themeButtons.forEach((button) => {
     button.addEventListener("click", () => {
-        const selectedFilter = button.dataset.filter;
-
-        filterButtons.forEach((filterButton) => {
-            const isActive = filterButton === button;
-            filterButton.classList.toggle("is-active", isActive);
-            filterButton.setAttribute("aria-pressed", String(isActive));
-        });
-
-        projectCards.forEach((card) => {
-            card.hidden = selectedFilter !== "all" && card.dataset.category !== selectedFilter;
-        });
+        setTheme(button.dataset.theme);
     });
 });
 
