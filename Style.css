@@ -644,16 +644,16 @@ section {
 	font-size: 1.5rem;
 }
 
-.project-card h3,
-.project-card p,
-.project-card ul {
-	margin-top: 0;
+.project-placeholder--image {
+    min-height: 11rem;
+	background-image: linear-gradient(rgba(11, 21, 32, 0.18), rgba(11, 21, 32, 0.18)), url('imagen/Dia_del_padre.png');
+    background-size: cover;
+    background-position: center;
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
 }
-
-.project-card h3 {
-	color: var(--color-primary-dark);
-}
-
 .project-card p,
 .project-card li {
 	font-size: 0.85rem;
