@@ -27,6 +27,7 @@
                 <li><a href="#sobre">Sobre mí</a></li>
                 <li><a href="#skills">Habilidades</a></li>
                 <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#design-system">Design System</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
@@ -43,7 +44,6 @@
             <div class="personal-intro">
                 <figure>
                     <img src="https://scontent.fgye1-1.fna.fbcdn.net/v/t1.6435-9/61165477_631012354032966_3248096840398143488_n.jpg?stp=dst-jpg_tt6&cstp=mx1200x1208&ctp=s1200x1208&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=6ee11&_nc_ohc=wDOxhW8-U64Q7kNvwFYRjX1&_nc_oc=AdpCWgxGMPPV7xEOKi8mFGZhWRrkMee2oLcwgY_9EHvgpt6di7pfhl8XF8bgDOh-oB-3S3_d8c65zDcRg0Tza2ro&_nc_zt=23&_nc_ht=scontent.fgye1-1.fna&_nc_gid=Ir0rUIt0mS378PeQCFLNMg&_nc_ss=7b2a8&oh=00_AQIJlrWFeobA_LWFL4cy742TmQx4lj8toQ3P2vkfErB8lw&oe=6AC97DD7" width="200" height="200" alt="Retrato de Steven Garcia">
-                    <figcaption>Foto de perfil de Steven Garcia</figcaption>
                 </figure>
 
                 <div class="personal-intro-text">
@@ -206,6 +206,93 @@
                         <li>Seguimiento de cambios y colaboración.</li>
                     </ul>
                     <a href="#contacto">Consultar proyecto</a>
+                </article>
+            </div>
+        </section>
+        <section id="design-system" aria-labelledby="design-system-titulo">
+            <div class="section-heading-row">
+                <div>
+                    <p class="eyebrow">Guía visual · v1.0</p>
+                    <h2 id="design-system-titulo">Design System / Componentes</h2>
+                </div>
+                <span class="status-badge">En uso</span>
+            </div>
+            <p class="design-system-intro">Decisiones visuales y componentes reutilizables que mantienen el portafolio claro, consistente y fácil de recorrer.</p>
+
+            <div class="design-system-grid">
+                <article class="system-panel system-panel--wide">
+                    <div class="system-panel-heading">
+                        <div>
+                            <p class="panel-kicker">01 · Tipografía</p>
+                            <h3>Jerarquía de contenido</h3>
+                        </div>
+                        <span class="type-label">Manrope</span>
+                    </div>
+                    <div class="type-specimen">
+                        <div>
+                            <span class="specimen-meta">H1 · 1.05rem · 800</span>
+                            <strong>Mi Portafolio</strong>
+                        </div>
+                        <div>
+                            <span class="specimen-meta">H2 · clamp(1.5rem, 2vw, 2rem)</span>
+                            <strong class="type-heading">Proyectos destacados</strong>
+                        </div>
+                        <div>
+                            <span class="specimen-meta">Cuerpo · 1rem · 1.6</span>
+                            <p>Texto cómodo para leer información profesional y detalles de cada proyecto.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="system-panel">
+                    <div class="system-panel-heading">
+                        <div>
+                            <p class="panel-kicker">02 · Color</p>
+                            <h3>Paleta funcional</h3>
+                        </div>
+                    </div>
+                    <div class="color-list">
+                        <div class="color-token"><span class="color-swatch color-swatch--background"></span><span><strong>Background</strong><small>#0B1520</small></span></div>
+                        <div class="color-token"><span class="color-swatch color-swatch--surface"></span><span><strong>Surface</strong><small>#122330</small></span></div>
+                        <div class="color-token"><span class="color-swatch color-swatch--accent"></span><span><strong>Accent</strong><small>#D4A46D</small></span></div>
+                    </div>
+                </article>
+
+                <article class="system-panel">
+                    <div class="system-panel-heading">
+                        <div>
+                            <p class="panel-kicker">03 · Acciones</p>
+                            <h3>Estados de botón</h3>
+                        </div>
+                    </div>
+                    <div class="button-showcase">
+                        <button class="component-button component-button--primary" type="button">Primario</button>
+                        <button class="component-button component-button--secondary" type="button">Secundario</button>
+                        <button class="component-button component-button--disabled" type="button" disabled>Deshabilitado</button>
+                    </div>
+                </article>
+
+                <article class="system-panel system-panel--wide">
+                    <div class="system-panel-heading">
+                        <div>
+                            <p class="panel-kicker">04 · Componentes</p>
+                            <h3>Patrones reutilizables</h3>
+                        </div>
+                    </div>
+                    <div class="component-showcase">
+                        <div class="mini-project-card">
+                            <span class="mini-card-number">01</span>
+                            <strong>Tarjeta de proyecto</strong>
+                            <p>Superficie con borde, sombra y enlace de acción.</p>
+                            <a href="#proyectos">Ver patrón <span aria-hidden="true">↗</span></a>
+                        </div>
+                        <div class="mini-list-card">
+                            <span class="mini-card-number">02</span>
+                            <strong>Etiquetas y estados</strong>
+                            <div class="tag-row"><span class="tag">HTML5</span><span class="tag tag--accent">Activo</span></div>
+                            <p>Identifican tecnologías, categorías y estados sin sobrecargar la interfaz.</p>
+                        </div>
+                    </div>
                 </article>
             </div>
         </section>
