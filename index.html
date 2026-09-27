@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio profesional de Steven Garcia, estudiante de Ingeniería de Software y desarrollador web.">
+    <title>Steven Garcia | Ingeniería de Software</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <header class="facebook-header">
+        <div class="brand-group">
+            <div class="brand-mark" aria-label="Logo del portafolio">
+                <img src="https://clipground.com/images/fairy-tail-anime-logo-1.jpg" alt="Logo de Fairy Tail" />
+            </div>
+            <div class="brand-copy">
+                <h1>Mi Portafolio</h1>
+            </div>
+        </div>
+
+        <nav class="header-nav" aria-label="Navegación principal">
+            <ul>
+                <li><a href="#sobre">Sobre mí</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#design-system">Design System</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-actions" aria-label="Selector de tema">
+            <button class="theme-toggle" type="button" data-theme="light" aria-pressed="false">Claro</button>
+            <button class="theme-toggle is-active" type="button" data-theme="dark" aria-pressed="true">Oscuro</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="sobre" aria-labelledby="informacion-profesional-titulo">
+            <h2 id="informacion-profesional-titulo">Información profesional</h2>
+            <div class="personal-intro">
+                <figure>
+                    <img src="https://scontent.fgye1-1.fna.fbcdn.net/v/t1.6435-9/61165477_631012354032966_3248096840398143488_n.jpg?stp=dst-jpg_tt6&cstp=mx1200x1208&ctp=s1200x1208&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=6ee11&_nc_ohc=wDOxhW8-U64Q7kNvwFYRjX1&_nc_oc=AdpCWgxGMPPV7xEOKi8mFGZhWRrkMee2oLcwgY_9EHvgpt6di7pfhl8XF8bgDOh-oB-3S3_d8c65zDcRg0Tza2ro&_nc_zt=23&_nc_ht=scontent.fgye1-1.fna&_nc_gid=Ir0rUIt0mS378PeQCFLNMg&_nc_ss=7b2a8&oh=00_AQIJlrWFeobA_LWFL4cy742TmQx4lj8toQ3P2vkfErB8lw&oe=6AC97DD7" width="200" height="200" alt="Retrato de Steven Garcia">
+                </figure>
+
+                <div class="personal-intro-text">
+                    <p class="eyebrow">Ingeniería de software · desarrollo web</p>
+                    <h3>Steven Garcia</h3>
+                    <p class="lead"><strong>Perfil profesional:</strong> desarrollador web con enfoque en interfaces accesibles, experiencias digitales funcionales y soluciones bien estructuradas.</p>
+                    <p>Estudiante de octavo semestre de Ingeniería de Software, con formación complementaria y un certificado de Amazon Web Services. Mi objetivo es seguir fortaleciendo mis conocimientos mediante nuevos proyectos, aprendizaje continuo y trabajo colaborativo.</p>
+
+                    <div class="profile-meta" aria-label="Datos relevantes">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>Python</span>
+                    </div>
+
+                    <h3>Formación e intereses académicos</h3>
+                    <p>Actualmente fortalezco mi formación en desarrollo web, con especial interés en accesibilidad, diseño adaptable, arquitectura de información y creación de soluciones digitales útiles.</p>
+
+                    <h3>Tecnologías</h3>
+                    <ul>
+                        <li>HTML5, CSS3, JavaScript y Python.</li>
+                        <li>Django.</li>
+                        <li>Git y GitHub.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="skills" aria-labelledby="skills-titulo">
+            <h2 id="skills-titulo">Habilidades técnicas</h2>
+
+            <div class="skills-grid">
+            <div class="skill-group">
+                <div class="frontend-languages" aria-label="Lenguajes frontend">
+                    <div class="language-item-wrap">
+                        <div class="language-item">
+                            <i class="devicon-html5-plain" aria-hidden="true"></i>
+                            <span>HTML5</span>
+                            <span>Conocimiento</span>
+                            <small>Intermedio</small>
+                        </div>
+                        <p class="language-knowledge" id="html-knowledge" hidden>Tengo conocimientos en HTML5 para crear la estructura semántica y accesible de páginas web.</p>
+                    </div>
+                    <div class="language-item-wrap">
+                        <div class="language-item">
+                            <i class="devicon-css3-plain" aria-hidden="true"></i>
+                            <span>CSS3</span>
+                            <span>Conocimiento</span>
+                            <small>Intermedio</small>
+                        </div>
+                        <p class="language-knowledge" id="css-knowledge" hidden>Tengo conocimientos en CSS3 para diseñar interfaces atractivas, adaptables y organizadas.</p>
+                    </div>
+                    <div class="language-item-wrap">
+                        <div class="language-item">
+                            <i class="devicon-javascript-plain" aria-hidden="true"></i>
+                            <span>JavaScript</span>
+                            <span>Conocimiento</span>
+                            <small>Intermedio</small>
+                        </div>
+                        <p class="language-knowledge" id="javascript-knowledge" hidden>Tengo conocimientos en JavaScript para añadir interactividad y responder a las acciones del usuario.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-group">
+                <div class="frontend-languages" aria-label="Tecnologías backend">
+                    <div class="language-item-wrap">
+                        <div class="language-item">
+                            <i class="devicon-python-plain" aria-hidden="true"></i>
+                            <span>Python</span>
+                            <span>Conocimiento</span>
+                            <small>Intermedio</small>
+                        </div>
+                        <p class="language-knowledge" id="python-knowledge" hidden>Tengo conocimientos en Python para crear aplicaciones, automatizaciones y servicios web.</p>
+                    </div>
+                    <div class="language-item-wrap">
+                        <div class="language-item">
+                            <i class="devicon-django-plain" aria-hidden="true"></i>
+                            <span>Django</span>
+                            <span>Conocimiento</span>
+                            <small>Intermedio</small>
+                        </div>
+                        <p class="language-knowledge" id="django-knowledge" hidden>Tengo conocimientos en Django, framework de Python para desarrollar aplicaciones web organizadas.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-group">
+                <div class="frontend-languages" aria-label="Herramientas de desarrollo">
+                    <div class="language-item-wrap">
+                        <div class="language-item">
+                            <i class="devicon-git-plain" aria-hidden="true"></i>
+                            <span>Git</span>
+                            <span>Conocimiento</span>
+                            <small>Intermedio</small>
+                        </div>
+                        <p class="language-knowledge" id="git-knowledge" hidden>Tengo conocimientos en Git para controlar versiones y organizar los cambios de un proyecto.</p>
+                    </div>
+                    <div class="language-item-wrap">
+                        <div class="language-item">
+                            <i class="devicon-github-original" aria-hidden="true"></i>
+                            <span>GitHub</span>
+                            <span>Conocimiento</span>
+                            <small>Intermedio</small>
+                        </div>
+                        <p class="language-knowledge" id="github-knowledge" hidden>Tengo conocimientos en GitHub para guardar repositorios y colaborar en proyectos de desarrollo.</p>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+            <h3 class="personal-skills-title">Habilidades personales</h3>
+            <ul class="personal-skills-list">
+                <li><strong>Accesibilidad web:</strong> creación de experiencias digitales accesibles.</li>
+                <li><strong>Trabajo en equipo:</strong> colaboración en proyectos.</li>
+                <li><strong>Resolución de problemas:</strong> pensamiento crítico para encontrar soluciones.</li>
+                <li><strong>Comunicación efectiva:</strong> habilidades interpersonales para colaborar.</li>
+            </ul>
+        </section>
+
+        <section id="proyectos" aria-labelledby="proyectos-titulo">
+            <h2 id="proyectos-titulo">Proyectos destacados</h2>
+
+            <div class="projects-grid">
+                <article class="project-card" data-category="frontend">
+                    <figure>
+                        <div class="project-placeholder project-placeholder--image" aria-hidden="true"></div>
+                    </figure>
+                    <h3>Regalo del Dia del Padre</h3>
+                    <p>Página básica con frases y video que decidí dedicar a mi padre.</p>
+                    <p><strong>Tecnologías:</strong> HTML5 y CSS3.</p>
+                    <ul>
+                        <li>Interfaz responsive y estructura semántica.</li>
+                    </ul>
+                    <a href="https://github.com/Sgarcia27/Dia_del_padre.git" target="_blank" rel="noopener noreferrer">Consultar proyecto</a>
+                </article>
+
+                <article class="project-card" data-category="backend">
+                    <figure>
+                        <img class="project-image" src="imagen/banaIa.jpeg" alt="Proyecto destacado 02">
+                    </figure>
+                    <h3>BanaIa</h3>
+                    <p>Una Ia que ayuda a los agriculstores de banano en controlar su plantado y detectar las enfermedades a tiempo y dando recomendaciones .</p>
+                    <p><strong>Tecnologías:</strong> Python y Django.</p>
+                    <ul>
+                        <li>Enfoque en lógica y colaboracion de Equipo de trabajo con Julio Jimenez .</li>
+                    </ul>
+                    <a href="https://github.com/juliojimenez200/proyecto-final-Julio-Jimenez.git" target="_blank" rel="noopener noreferrer">Consultar proyecto</a>
+                </article>
+
+                <article class="project-card" data-category="frontend">
+                    <figure>
+                        <img class="project-image" src="imagen/Salud%20y%20Desarrollo.png" alt="Proyecto Salud y Desarrollo">
+                    </figure>
+                    <h3>Salud y Desarrollo</h3>
+                    <p>Proyecto enfocado en salud y desarrollo de la UNEMI, realizado en colaboración con mis compañeros.</p>
+                    <p><strong>Tecnologías:</strong> HTML5, CSS3 y JavaScript.</p>
+                    <ul>
+                        <li>Desarrollo en equipo con Francisco Ronquillo, Jose Sanchez, Ricardo Diaz y Elkin Salvatierra.</li>
+                    </ul>
+                    <a href="https://github.com/Francisco-Ronquillo/Sistema_de_salud_unemi.git" target="_blank" rel="noopener noreferrer">Consultar proyecto</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="design-system" aria-labelledby="design-system-titulo">
+            <div class="section-heading-row">
+                <div>
+                    <p class="eyebrow">Guía visual · v1.0</p>
+                    <h2 id="design-system-titulo">Design System / Componentes</h2>
+                </div>
+                <span class="status-badge">En uso</span>
+            </div>
+            <p class="design-system-intro">Decisiones visuales y componentes reutilizables que mantienen el portafolio claro, consistente y fácil de recorrer.</p>
+
+            <div class="design-system-grid">
+                <article class="system-panel system-panel--wide">
+                    <div class="system-panel-heading">
+                        <div>
+                            <p class="panel-kicker">01 · Tipografía</p>
+                            <h3>Jerarquía de contenido</h3>
+                        </div>
+                        <span class="type-label">Manrope</span>
+                    </div>
+                    <div class="type-specimen">
+                        <div>
+                            <span class="specimen-meta">H1 · 1.05rem · 800</span>
+                            <strong>Mi Portafolio</strong>
+                        </div>
+                        <div>
+                            <span class="specimen-meta">H2 · clamp(1.5rem, 2vw, 2rem)</span>
+                            <strong class="type-heading">Proyectos destacados</strong>
+                        </div>
+                        <div>
+                            <span class="specimen-meta">Cuerpo · 1rem · 1.6</span>
+                            <p>Texto cómodo para leer información profesional y detalles de cada proyecto.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="system-panel">
+                    <div class="system-panel-heading">
+                        <div>
+                            <p class="panel-kicker">02 · Color</p>
+                            <h3>Paleta funcional</h3>
+                        </div>
+                    </div>
+                    <div class="color-list">
+                        <div class="color-token"><span class="color-swatch color-swatch--background"></span><span><strong>Background</strong><small>#0B1520</small></span></div>
+                        <div class="color-token"><span class="color-swatch color-swatch--surface"></span><span><strong>Surface</strong><small>#122330</small></span></div>
+                        <div class="color-token"><span class="color-swatch color-swatch--accent"></span><span><strong>Accent</strong><small>#D4A46D</small></span></div>
+                    </div>
+                </article>
+
+                <article class="system-panel">
+                    <div class="system-panel-heading">
+                        <div>
+                            <p class="panel-kicker">03 · Acciones</p>
+                            <h3>Estados de botón</h3>
+                        </div>
+                    </div>
+                    <div class="button-showcase">
+                        <button class="component-button component-button--primary" type="button">Primario</button>
+                        <button class="component-button component-button--secondary" type="button">Secundario</button>
+                        <button class="component-button component-button--disabled" type="button" disabled>Deshabilitado</button>
+                    </div>
+                </article>
+
+                <article class="system-panel system-panel--wide">
+                    <div class="system-panel-heading">
+                        <div>
+                            <p class="panel-kicker">04 · Componentes</p>
+                            <h3>Patrones reutilizables</h3>
+                        </div>
+                    </div>
+                    <div class="component-showcase">
+                        <div class="mini-project-card">
+                            <span class="mini-card-number">01</span>
+                            <strong>Tarjeta de proyecto</strong>
+                            <p>Superficie con borde, sombra y enlace de acción.</p>
+                            <a href="#proyectos">Ver patrón <span aria-hidden="true">↗</span></a>
+                        </div>
+                        <div class="mini-list-card">
+                            <span class="mini-card-number">02</span>
+                            <strong>Etiquetas y estados</strong>
+                            <div class="tag-row"><span class="tag">HTML5</span><span class="tag tag--accent">Activo</span></div>
+                            <p>Identifican tecnologías, categorías y estados sin sobrecargar la interfaz.</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="contacto" aria-labelledby="contacto-titulo">
+            <h2 id="contacto-titulo">Contacto</h2>
+            <p>Si deseas ponerte en contacto conmigo, puedes escribirme o llamarme.</p>
+            <address>
+                Correo: <a href="mailto:steven27m.a@gmail.com">steven27m.a@gmail.com</a><br>
+                Teléfono: <a href="tel:+593993545585">+593 99 354 5585</a>
+            </address>
+        </section>
+    </main>
+
+    <button class="back-to-top" type="button" aria-label="Volver al inicio">↑</button>
+
+    <script src="script.js" defer></script>
+
+</body>
+</html>
